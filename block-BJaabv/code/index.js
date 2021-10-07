@@ -8,8 +8,9 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(dogAge, conversion = 7) {
+  let age = dogAge * conversion;
+  return `Your puppy's age is ${age} dog years`;
 }
 
 /*
@@ -19,8 +20,10 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age, moviesPerWeek) {
+  const maxAge = 90;
+  let numberOfMovies = (maxAge - age) * 48 * moviesPerWeek;
+  return `Total number of movies you will watch ${numberOfMovies}`;
 }
 
 /*
@@ -29,8 +32,9 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
+function celsiusToFahrenheit(celsiusTemp) {
+  const fahrenheit = (33.8 - 32) * (5 /9);
+  return ``
 }
 
 /*
@@ -51,8 +55,12 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(x, n) {
+  if (x < 1) {
+    return ` The value below 1 is not allowed`;
+  } else {
+    return `${x ** n}`;
+  }
 }
 
 // Test
@@ -78,8 +86,12 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
-  // Your code goes here
+function sumOfN(n) {
+  let sum = 0;
+  for (i = 0; i <= n; i++) {
+    sum += i;
+    return `The sum of the numbers 1 to ${n} is ${sum}`;
+  }
 }
 
 /*
@@ -92,8 +104,8 @@ function sumOfN() {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(num1, num2) {
+  
 }
 
 min(0, 10);
