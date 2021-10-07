@@ -283,12 +283,11 @@ let oddOrEven = function(number) {
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
 
-// let number = +prompt("Enter a number");
-// number % 2 === 0 ?
-// return `Number is even`
-// :
-// return `Number is odd`;
+let oddOrEven = (number) =>
+num % 2 === 0 ? `Number is even` : `Number is odd`;
+
 // - Write an Arrow Function with curly brackets
+
 let oddOrEven = (number) => {
   if (number % 2 === 0) {
     return `Number is even`;
