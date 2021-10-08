@@ -15,7 +15,7 @@ function minToSec(min) {
   return minute * 60;
 }
 // - Execute the function with required parameter
-
+minToSec(50);
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
 Return true and false based on that.
@@ -26,12 +26,16 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange(lower, upper,number) {
-  if(number > lower && number < upper) {
-    return true;
-  } else {
-    return false;
-  }
+// function isInRange(lower, upper,number) {
+//   if(number > lower && number < upper) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+function isInRange(lower, upper, number) {
+  return num > lower && num < upper;
 }
 // - Execute the function with required parameter
 
@@ -100,9 +104,9 @@ Twist is when user passes anything other than number, or string value you should
 */
 
 function sum(a, b) {
-  if (a + b) {
+  if (typeof a == "number" && typeof b == "number") {
     return a + b;
-  } else if (string) {
+  } else if (typeof a == "string" && typeof b == "string") {
     return `${a} ${b}`;
   } else {
     return `Enter a valid input`;
